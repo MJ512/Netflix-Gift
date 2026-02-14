@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Who's Watching - Jafran Originals</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-dark intro-page">
+  <div class="intro-stage" id="introStage">
+    <h1 class="brand-intro-logo" aria-label="Jafran Originals">J</h1>
+    <audio id="introSound" preload="auto" src="assets/audio/netflix-intro.mp3"></audio>
+  </div>
+  <audio id="profileSelectSound" preload="auto" src="assets/audio/profile-select.mp3"></audio>
+
+  <div class="safe-area who-screen hidden" id="whoScreen">
+    <div class="who-container">
+      <h1 class="logo">JAFRAN ORIGINALS</h1>
+      <p class="who-title">Who's Watching?</p>
+
+      <div class="profiles">
+        <button class="profile-card" onclick="selectProfile()" aria-label="Open profile">
+          <img src="assets/posters/profile1.jpg" alt="Profile" />
+          <span>My Forever Favorite</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

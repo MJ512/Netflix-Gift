@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Now Playing - Jafran Originals</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-dark">
+  <div class="safe-area">
+    <header class="top-bar">
+      <button class="back-btn" onclick="goBack()">Back</button>
+      <span class="logo-small">JAFRAN ORIGINALS</span>
+    </header>
+
+    <main class="player-layout">
+      <section class="player-container" id="playerContainer">
+        <video id="videoPlayer" playsinline preload="metadata"></video>
+
+        <div class="video-overlay visible" id="videoOverlay">
+          <div class="overlay-top">
+            <h2 id="overlayTitle">Loading...</h2>
+          </div>
+          <div class="overlay-bottom">
+            <button id="overlayPlayBtn" class="play-btn">Play</button>
+            <button id="overlayMuteBtn" class="ghost-btn">Mute</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="player-info">
+        <h1 id="movieTitle">Loading...</h1>
+        <p id="movieDesc"></p>
+        <p id="movieCast" class="meta-line"></p>
+        <p id="movieDetails" class="meta-line"></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
